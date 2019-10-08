@@ -5,6 +5,7 @@ namespace GameView
 {
 	Game::Game(int width, int height, string titleScreen)
 	{
+
 		data->window.create(VideoMode(width, height), titleScreen, Style::Close | Style::Titlebar);
 	}
 
