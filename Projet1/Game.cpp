@@ -5,7 +5,7 @@ namespace GameView
 {
 	Game::Game():window(VideoMode(800, 600), "SFML works!")
 	{
-		window.setTitle("My Game");
+		window.setTitle("My Game Very Good");
 	}
 
 
