@@ -6,8 +6,8 @@ using namespace GameView;
 
 int main()
 {
-	
-	Game myEngine;
+	string egineName = "My game";
+	Game myEngine(800,600,egineName);
 	myEngine.init();
 	myEngine.startGame();
 

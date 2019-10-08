@@ -3,11 +3,10 @@
 
 namespace GameView
 {
-	Game::Game():window(VideoMode(800, 600), "SFML works!")
+	Game::Game(int width, int height, string titleScreen)
 	{
-		window.setTitle("My Game");
+		data->window.create(VideoMode(width, height), titleScreen, Style::Close | Style::Titlebar);
 	}
-
 
 	Game::~Game()
 	{
@@ -15,17 +14,19 @@ namespace GameView
 
 	void Game::init()
 	{
-		window.setFramerateLimit(60);
-
+		data->window.setFramerateLimit(FPS);
 	}
 
 	void Game::updateEvent()
 	{
 		Event event;
-		while (window.pollEvent(event))
+		// passe tous les events avant de continuer 
+		while (data->window.pollEvent(event))
 		{
 			if (event.type == Event::Closed)
-				window.close();
+				data->window.close();
+			
+			data->inputManager.update(event);
 		}
 	}
 
@@ -33,14 +34,10 @@ namespace GameView
 	{
 
 	}
-
-	void Game::updateInput()
-	{
-
-	}
 	void Game::update()
 	{
-		while (window.isOpen())
+		//float currentTime = 0, frameTime = 0.0, interpolation =0.0f;
+		while (data->window.isOpen())
 		{
 			Time elapsed = clock.restart();
 
@@ -48,8 +45,8 @@ namespace GameView
 			updateLogic();
 			render();
 		}
-
 	}
+
 	void Game::startGame()
 	{
 		update();
@@ -57,10 +54,11 @@ namespace GameView
 
 	void Game::render()
 	{
-		window.clear(Color::Black);
+		data->window.clear(Color::Black);
 
 
-		window.display();
 
+
+		data->window.display();
 	}
 }

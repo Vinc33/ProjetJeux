@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 #include <SFML/Graphics.hpp>
 #include "./Manager/StateManager.h"
 #include "./Manager/InputManager.h"
@@ -16,10 +17,12 @@ namespace GameView
 		InputManager inputManager;
 	};
 
+	typedef std::shared_ptr<GameData> GameDataRef;
+
 	class Game
 	{
 	public:
-		Game();
+		Game(int width, int height, string titleScreen);
 		~Game();
 
 		void init();
@@ -32,7 +35,12 @@ namespace GameView
 		void render();
 		void updateEvent();
 
-		RenderWindow window;
+		const float dt = 1.0f / 60;
 		Clock clock;
+		const unsigned int FPS = 60;
+		
+		GameDataRef data = std::make_shared<GameData>();
+
+
 	};
 }

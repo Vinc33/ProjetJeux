@@ -21,6 +21,34 @@ namespace GameView
 		return false;
 	}
 
+	void InputManager::update(const Event& eventInfo)
+	{
+		switch(eventInfo.key.code)
+		{
+			case Keyboard::W :
+			case Keyboard::Up:
+
+			break;
+
+			case Keyboard::A:
+			case Keyboard::Left:
+
+			break;
+
+			case Keyboard::D:
+			case Keyboard::Right:
+
+			break;
+
+			case Keyboard::S:
+			case Keyboard::Down:
+
+			break;
+
+			default: break;
+		}
+	}
+
 	Vector2i InputManager::getMousePos(RenderWindow &window)
 	{
 		return Mouse::getPosition(window);
