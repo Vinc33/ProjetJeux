@@ -1,6 +1,5 @@
 #include "Game.h"
 
-
 namespace GameView
 {
 	Game::Game(int width, int height, string titleScreen)
@@ -27,6 +26,7 @@ namespace GameView
 				data->window.close();
 			
 			data->inputManager.update(event);
+			myEntity.updateInput(FPS);
 		}
 	}
 
@@ -56,7 +56,7 @@ namespace GameView
 	{
 		data->window.clear(Color::Black);
 
-
+		myEntity.draw(data->window);
 
 
 		data->window.display();

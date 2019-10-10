@@ -136,6 +136,7 @@
     <ClCompile Include="Manager\AssetManager.cpp" />
     <ClCompile Include="Manager\InputManager.cpp" />
     <ClCompile Include="Manager\StateManager.cpp" />
+    <ClCompile Include="MyEntity.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="State.cpp" />
   </ItemGroup>
@@ -144,6 +145,7 @@
     <ClInclude Include="Manager\AssetManager.h" />
     <ClInclude Include="Manager\InputManager.h" />
     <ClInclude Include="Manager\StateManager.h" />
+    <ClInclude Include="MyEntity.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="State.h" />
   </ItemGroup>

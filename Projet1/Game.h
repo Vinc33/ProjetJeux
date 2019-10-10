@@ -4,6 +4,7 @@
 #include "./Manager/StateManager.h"
 #include "./Manager/InputManager.h"
 #include "./Manager/AssetManager.h"
+#include "MyEntity.h"
 
 using namespace sf;
 
@@ -40,6 +41,8 @@ namespace GameView
 		const unsigned int FPS = 60;
 		
 		GameDataRef data = std::make_shared<GameData>();
+
+		MyEntity myEntity;
 
 
 	};
