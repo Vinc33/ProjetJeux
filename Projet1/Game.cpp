@@ -30,7 +30,7 @@ namespace GameView
 		}
 	}
 
-	void Game::updateLogic()
+	void Game::updateLogic(float dt)
 	{
 
 	}
@@ -41,8 +41,11 @@ namespace GameView
 		{
 			Time elapsed = clock.restart();
 
+			// Make a fraction from the delta time
+			float dtAsSeconds = elapsed.asSeconds();
+
 			updateEvent();
-			updateLogic();
+			updateLogic(dtAsSeconds);
 			render();
 		}
 	}

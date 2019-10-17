@@ -31,13 +31,14 @@ namespace GameView
 	private:
 		void update();
 		void updateInput();
-		void updateLogic();
+		void updateLogic(float dt);
 		void render();
 		void updateEvent();
 
 		const float dt = 1.0f / 60;
 		Clock clock;
 		const unsigned int FPS = 60;
+
 		
 		GameDataRef data = std::make_shared<GameData>();
 
