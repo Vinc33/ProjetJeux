@@ -1,5 +1,6 @@
 ﻿  MyEntity.cpp
-m:\gameengine\gameengine\projet1\myentity.cpp(10): warning C4305: 'argument' : troncation de 'double' à 'float'
-m:\gameengine\gameengine\projet1\myentity.cpp(11): warning C4305: '=' : troncation de 'double' à 'float'
+m:\gameengine\gameengine\projet1\myentity.cpp(9): warning C4305: 'argument' : troncation de 'double' à 'float'
+m:\gameengine\gameengine\projet1\myentity.cpp(11): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+m:\gameengine\gameengine\projet1\myentity.cpp(12): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
 m:\gameengine\gameengine\projet1\myentity.cpp(26): warning C4244: 'argument' : conversion de 'const int' en 'float', perte possible de données
   Projet1.vcxproj -> M:\GameEngine\GameEngine\x64\Debug\Projet1.exe

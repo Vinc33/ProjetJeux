@@ -42,7 +42,8 @@ namespace GameView
 		
 		GameDataRef data = std::make_shared<GameData>();
 
-		MyEntity myEntity;
+		MyEntity* myEntity;
+		Texture myTexture;
 
 
 	};
