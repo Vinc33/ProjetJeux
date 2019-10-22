@@ -45,5 +45,9 @@ namespace GameView
 		MyEntity myEntity;
 		Platform* test;
 
+		MyEntity* myEntity;
+		Texture myTexture;
+
+
 	};
 }

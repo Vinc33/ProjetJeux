@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  Collider.cpp
   Game.cpp
 m:\gameengine\gameengine\projet1\game.cpp(29): warning C4244: 'argument' : conversion de 'const unsigned int' en 'float', perte possible de données
@@ -5,6 +6,12 @@ m:\gameengine\gameengine\projet1\game.cpp(29): warning C4244: 'argument' : conv
   MyEntity.cpp
 m:\gameengine\gameengine\projet1\myentity.cpp(10): warning C4305: 'argument' : troncation de 'double' à 'float'
 m:\gameengine\gameengine\projet1\myentity.cpp(11): warning C4305: '=' : troncation de 'double' à 'float'
+=======
+﻿  MyEntity.cpp
+m:\gameengine\gameengine\projet1\myentity.cpp(9): warning C4305: 'argument' : troncation de 'double' à 'float'
+m:\gameengine\gameengine\projet1\myentity.cpp(11): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+m:\gameengine\gameengine\projet1\myentity.cpp(12): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+>>>>>>> 76d08dfe6e65d97b1e53eb434ea715887c20271f
 m:\gameengine\gameengine\projet1\myentity.cpp(26): warning C4244: 'argument' : conversion de 'const int' en 'float', perte possible de données
   Platform.cpp
   Génération de code en cours...
