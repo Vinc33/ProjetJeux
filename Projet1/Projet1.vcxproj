@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Collider.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Manager\AssetManager.cpp" />
@@ -138,15 +139,18 @@
     <ClCompile Include="Manager\StateManager.cpp" />
     <ClCompile Include="MyEntity.cpp" />
     <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Platform.cpp" />
     <ClCompile Include="State.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Collider.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Manager\AssetManager.h" />
     <ClInclude Include="Manager\InputManager.h" />
     <ClInclude Include="Manager\StateManager.h" />
     <ClInclude Include="MyEntity.h" />
     <ClInclude Include="Object.h" />
+    <ClInclude Include="Platform.h" />
     <ClInclude Include="State.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

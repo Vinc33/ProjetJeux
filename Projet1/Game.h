@@ -5,6 +5,7 @@
 #include "./Manager/InputManager.h"
 #include "./Manager/AssetManager.h"
 #include "MyEntity.h"
+#include "Platform.h"
 
 using namespace sf;
 
@@ -41,9 +42,8 @@ namespace GameView
 		const unsigned int FPS = 60;
 		
 		GameDataRef data = std::make_shared<GameData>();
-
 		MyEntity myEntity;
-
+		Platform* test;
 
 	};
 }
