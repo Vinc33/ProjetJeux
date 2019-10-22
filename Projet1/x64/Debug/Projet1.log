@@ -1,9 +1,6 @@
-﻿  Game.cpp
-  Main.cpp
-  AssetManager.cpp
-  InputManager.cpp
-  StateManager.cpp
-  Object.cpp
-  State.cpp
-  Génération de code en cours...
-  Projet1.vcxproj -> M:\Projet1\x64\Debug\Projet1.exe
+﻿  MyEntity.cpp
+m:\gameengine\gameengine\projet1\myentity.cpp(9): warning C4305: 'argument' : troncation de 'double' à 'float'
+m:\gameengine\gameengine\projet1\myentity.cpp(11): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+m:\gameengine\gameengine\projet1\myentity.cpp(12): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+m:\gameengine\gameengine\projet1\myentity.cpp(26): warning C4244: 'argument' : conversion de 'const int' en 'float', perte possible de données
+  Projet1.vcxproj -> M:\GameEngine\GameEngine\x64\Debug\Projet1.exe

@@ -131,19 +131,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Manager\AssetManager.cpp" />
     <ClCompile Include="Manager\InputManager.cpp" />
     <ClCompile Include="Manager\StateManager.cpp" />
+    <ClCompile Include="MyEntity.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="State.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animation.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Manager\AssetManager.h" />
     <ClInclude Include="Manager\InputManager.h" />
     <ClInclude Include="Manager\StateManager.h" />
+    <ClInclude Include="MyEntity.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="State.h" />
   </ItemGroup>

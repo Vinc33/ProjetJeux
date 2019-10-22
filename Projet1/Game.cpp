@@ -1,11 +1,13 @@
 #include "Game.h"
 
-
 namespace GameView
 {
 	Game::Game(int width, int height, string titleScreen)
 	{
+		data->window.setVerticalSyncEnabled(true);
 		data->window.create(VideoMode(width, height), titleScreen, Style::Close | Style::Titlebar);
+		myTexture.loadFromFile("Image/Capture.png");
+		myEntity = new MyEntity(&myTexture, sf::Vector2u(3, 2), 0.001f, 0.01f);
 	}
 
 	Game::~Game()
@@ -27,6 +29,7 @@ namespace GameView
 				data->window.close();
 			
 			data->inputManager.update(event);
+			myEntity->updateInput(FPS,true);
 		}
 	}
 
@@ -59,7 +62,7 @@ namespace GameView
 	{
 		data->window.clear(Color::Black);
 
-
+		myEntity->draw(data->window);
 
 
 		data->window.display();
